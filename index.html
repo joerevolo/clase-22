@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novelas</title>
+    <link rel="shortcut icon" href="img/cuento-de-hadas.png" type="image/icon"/>
+    <style>
+        header{
+            width: 80%;
+            margin: auto;
+        }
+        img{
+            border-radius: 5px;
+        }
+        p{
+            border: 1px solid rgb(55, 196, 243);
+            text-align: center;
+            height: 40px; padding-top:15px ;
+            margin-top: 0%; 
+            font-weight: bold; 
+        }
+        table{
+            width: 60%;
+            margin: auto;
+        }
+        td{
+            padding: 15px;
+        }
+        input[type=button] {
+            background-color: bisque;
+            border-radius: 5px;
+            width: 180px;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        function descargar(op){
+            switch (op){
+                case 1:
+                    window.open("pdf/20323-orgullo-y-prejuicio-jane-austen.pdf","", "top=100px, left=100px, width=520px, height=420px");
+                    break
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img width="100%" src="img/llama editada.png" alt="">
+        <p>N O V E L A S</p>
+    </header>
+    <section>
+        <table>
+            <tr style="background-color: lightblue;">
+                <td>Novela</td>
+                <td>Descripcion</td>
+                <td>Descarga</td>
+                <td>Precio</td>
+            </tr>
+            <tr>
+                <td><img src="img/Novedades-20241016T135659Z-001/Novedades/amor.jpg" alt=""></td>
+                <td style="width: 65%;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam esse culpa voluptas praesentium cum asperiores tempora laudantium blanditiis fuga cupiditate quibusdam velit, nulla nihil? Provident sit excepturi aspernatur. Iure, tempora?
+                <br><br>
+                Cantidad
+                <input style="width: 60px; margin-bottom: 10px; text-align: right;"  type="text" name="" id="txtCan" value="1"> <br>
+                <input  type="button" value="Agregar al carrito" >t
+                </td>
+                <td><img src="img/descargas.png" alt="" onclick="descargar(1);"></td>
+                <td>56.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/Novedades-20241016T135659Z-001/Novedades/dejamos.jpg" alt=""></td>
+                <td style="width: 65%;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam esse culpa voluptas praesentium cum asperiores tempora laudantium blanditiis fuga cupiditate quibusdam velit, nulla nihil? Provident sit excepturi aspernatur. Iure, tempora?
+                <br><br>
+                <input type="button" value="Agregar al carrito" ></a> 
+                </td>
+                <td><a href="pdf/20325-romeo-y-julieta-william-shakespeare.pdf" target="_blank"><img src="img/descargas.png" alt=""></a></td>
+                <td>52.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/Novedades-20241016T135659Z-001/Novedades/rebeldes.jpg" alt=""></td>
+                <td style="width: 65%;" >
+                <iframe src="pdf/20323-orgullo-y-prejuicio-jane-austen.pdf" width="100%" frameborder="1"></iframe>            
+                <br><br>
+                <input type="button" value="Agregar al carrito" ></a> 
+                </td>
+                <td><a href="pdf/20325-romeo-y-julieta-william-shakespeare.pdf" target="_blank"><img src="img/descargas.png" alt=""></a></td>
+                <td>52.00</td>
+            </tr>
+        </table>
+    </section>
+
+    
+</body>
+</html>
